@@ -1,0 +1,67 @@
+<style>
+  body,
+  html {
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  body {
+    padding: 10px;
+    box-sizing: border-box;
+    transition: all 1s;
+  }
+
+  #modeBtn {
+    font-size: 2rem;
+    float: right;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: inherit;
+  }
+
+  body.night {
+    background-color: black;
+    color: white;
+    transition: all 1s;
+  }
+
+  #modeBtn::after {
+    content: '🌞';
+  }
+
+  body.night #modeBtn::after {
+    content: '🌜';
+  }
+</style>
+<header>
+  <button id="modeBtn"></button>
+  <h1>YK菌的博客写的特别不错~</h1>
+</header>
+
+<main>
+  <div class="description">
+    <p>
+      这里就是YK菌的博客啦，我之前是在C站写博客的，后来参加了青训营的活动，转来了掘金，社区很好~很多活动~以后常来掘金啦~~
+      <hr />
+      之前的博客和现在的一样，都是一些笔记之类的，我是前端新人，先以记笔记为主吧~~把笔记记好，慢慢拓展~
+      <hr />
+      <strong>YK菌</strong>，冲啊~~~~
+    </p>
+  </div>
+</main>
+<script>
+  const btn = document.getElementById('modeBtn');
+  btn.addEventListener('click', (e) => {
+    const body = document.body;
+    if (body.className !== 'night') {
+      body.className = 'night';
+    } else {
+      body.className = '';
+    }
+  });
+</script>
