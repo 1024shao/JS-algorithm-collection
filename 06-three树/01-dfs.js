@@ -29,8 +29,8 @@ const root = {
 		},
 	],
 }
-const bsf = (root) => {
+const dsf = (root) => {
 	console.log(root.val)
-	root.children.forEach((item) => bsf(item))
+	root.children.forEach((item) => dsf(item))
 }
-bsf(root)
+dsf(root)

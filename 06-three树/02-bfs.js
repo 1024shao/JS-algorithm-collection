@@ -42,3 +42,10 @@ const bsf = (root) => {
 	}
 }
 bsf(root)
+
+const arr = []
+arr[2] = 1
+console.log(arr)
+if ([]) {
+	console.log('hello')
+}
