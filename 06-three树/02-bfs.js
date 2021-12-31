@@ -49,3 +49,5 @@ console.log(arr)
 if ([]) {
 	console.log('hello')
 }
+const arr = new Array(4)
+console.log(arr)
