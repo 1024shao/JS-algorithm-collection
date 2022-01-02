@@ -7,9 +7,11 @@ Array.prototype.selectionSort = function () {
 				min = j
 			}
 		}
-		const temp = this[i]
-		this[i] = this[min]
-		this[min] = temp
+		if (min != i) {
+			const temp = this[i]
+			this[i] = this[min]
+			this[min] = temp
+		}
 	}
 }
 
