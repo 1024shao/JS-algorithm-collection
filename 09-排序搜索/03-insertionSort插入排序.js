@@ -16,4 +16,5 @@ Array.prototype.insertionSort = function () {
 
 const arr = [1, 3, 5, 3, 2, 1, 0]
 arr.insertionSort()
-console.log(arr)
+console.log(arr.slice(0, 3)) //slice 方法是左闭右开
+console.log(arr.slice(3, 7))
