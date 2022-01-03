@@ -11,7 +11,7 @@ Array.prototype.mergeSort = function () {
 			if (orderLeft.length && orderRight.length) {
 				res.push(
 					orderLeft[0] < orderRight[0] ? orderLeft.shift() : orderRight.shift()
-				)
+				) 
 			} else if (orderLeft.length) {
 				res.push(orderLeft.shift())
 			} else {
